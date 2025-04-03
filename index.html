@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Hello, GitHub Pages!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкция по использованию VLESS-ключа</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>📖 Инструкция по использованию VLESS-ключа с Hiddify и V2rayTun</h1>
+
+    <h2>🔹 Генерация VLESS-ключа</h2>
+    <p>После генерации VLESS-ключа вам предоставлена ссылка формата:</p>
+
+    <pre>vless://UUID@SERVER:PORT?security=none&type=ws&path=/somepath#MyVLESS</pre>
+
+    <p>Эта ключ может быть использована в клиентах <strong>Hiddify</strong> и <strong>V2rayTun</strong>.</p>
+
+    <hr>
+
+    <h2>🛠 Установка клиента</h2>
+
+    <h3>📥 V2rayTun</h3>
+    <ol>
+        <li>Скачайте и установите V2rayTun:
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.v2ray.ang" target="_blank">Google Play</a></li>
+            </ul>
+        </li>
+        <li>Откройте приложение.</li>
+        <li>Перейдите в <strong>Настройки → Конфигурация</strong>.</li>
+        <li>Выберите <strong>«Импорт из URL»</strong> и вставьте вашу VLESS-ключ.</li>
+        <li>Подключитесь.</li>
+    </ol>
+
+    <hr>
 
 </body>
 </html>
