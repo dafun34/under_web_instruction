@@ -9,17 +9,19 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             max-width: 800px;
-            margin: 20px auto;
+            margin: auto;
             padding: 20px;
+            background-color: #f9f9f9;
         }
         h1, h2, h3 {
             color: #333;
         }
-        pre {
-            background: #f4f4f4;
-            padding: 10px;
+        code {
+            background-color: #eee;
+            padding: 5px;
             border-radius: 5px;
-            overflow-x: auto;
+            display: block;
+            white-space: pre-wrap;
         }
         a {
             color: #007BFF;
@@ -29,36 +31,46 @@
             text-decoration: underline;
         }
         hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
             margin: 20px 0;
         }
     </style>
 </head>
 <body>
 
-    <h1>📖 Инструкция по использованию VLESS-ключа с Hiddify и V2rayTun</h1>
+
+    <h1>📖 Инструкция по использованию VLESS-ключа</h1>
 
     <h2>🔹 Генерация VLESS-ключа</h2>
-    <p>После генерации VLESS-ключа вам предоставлена ссылка формата:</p>
+    <p>После генерации VLESS-ключа вам предоставляется ссылка формата:</p>
 
-    <pre>vless://UUID@SERVER:PORT?security=none&type=ws&path=/somepath#MyVLESS</pre>
+    <code>vless://UUID@SERVER:PORT?security=none&type=ws&path=/somepath#MyVLESS</code>
 
-    <p>Эта ключ может быть использована в клиентах <strong>Hiddify</strong> и <strong>V2rayTun</strong>.</p>
+    <p>Скопируйте его любым удобным способом. Достаточно просто кликнуть по сгенерированному ключу.<p>
+
+    <p>Этот ключ может быть использован в клиенте <strong>v2box</strong>.</p>
 
     <hr>
 
-    <h2>🛠 Установка клиента</h2>
+    <h2>🛠 Установка приложения для мобильного</h2>
 
-    <h3>📥 V2rayTun</h3>
+    <h3>📥 v2box</h3>
     <ol>
-        <li>Скачайте и установите V2rayTun:
-            <ul>
-                <li><a href="https://play.google.com/store/apps/details?id=com.v2ray.ang" target="_blank">Google Play</a></li>
-            </ul>
-        </li>
+        <li>Скачайте и установите v2box:</li>
+        <ul>
+            <li><a href="https://play.google.com/store/apps/details?id=dev.hexasoftware.v2box&hl=ru&pli=1" target="_blank">Google Play</a></li>
+            <li><a href="https://apps.apple.com/ru/app/v2box-v2ray-client/id6446814690" target="_blank">App Store</a></li>
+        </ul>
         <li>Откройте приложение.</li>
-        <li>Перейдите в <strong>Настройки → Конфигурация</strong>.</li>
-        <li>Выберите <strong>«Импорт из URL»</strong> и вставьте вашу VLESS-ключ.</li>
-        <li>Подключитесь.</li>
+        <li>Разрешите добавление конфигурации VPN.</li>
+        <li>Перейдите в раздел <strong>Configs</strong>.</li>
+        <li>Нажмите на кнопку <strong>+</strong> в правом верхнем углу.</li>
+        <li>В выпадающем меню выберите пункт <strong>Import v2ray uri from clipboard</strong></li>
+        <li>Выберите <strong>«Импорт из URL»</strong> и вставьте ваш VLESS-ключ.</li>
+        <li>Передвиньте ползунок <strong>Slide to Connect</strong> для подключения.</li>
+        <li>Для отключения следует нажать <strong>Tap To Disconnect.</strong></li>
     </ol>
 
     <hr>
